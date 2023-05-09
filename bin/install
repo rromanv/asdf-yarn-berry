@@ -52,7 +52,7 @@ asdf_yarn_install() {
   mkdir -p "$(dirname "${ASDF_INSTALL_PATH}")"
 
   # Finish the installation
-  mv "${ASDF_YARN_DIR}" "${ASDF_INSTALL_PATH}"
+  mv "${ASDF_YARN_DIR}/scripts/bin" "${ASDF_INSTALL_PATH}"
 }
 
 [ "${ASDF_INSTALL_TYPE}" == 'ref' ] && asdf_yarn_fail "This plugin does not support installing by ref."
