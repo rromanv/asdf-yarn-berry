@@ -4,5 +4,5 @@ set -o nounset -o pipefail -o errexit
 IFS=$'\t\n'
 
 git ls-remote --refs --tags "https://github.com/yarnpkg/berry.git" \
-| grep /shell/
+| grep /shell/ \
 | cut -d "/" -f 5
