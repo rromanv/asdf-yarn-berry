@@ -6,5 +6,4 @@ IFS=$'\t\n'
 git ls-remote --refs --tags "https://github.com/yarnpkg/berry.git" \
 | grep /cli/ \
 | cut -d "/" -f 5 \
-| sort --reverse \
 | xargs
