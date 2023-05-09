@@ -3,7 +3,7 @@
 set -o nounset -o pipefail -o errexit
 IFS=$'\t\n'
 
-git ls-remote --refs --tags "https://github.com/yarnpkg/yarn.git" \
+git ls-remote --refs --tags "https://github.com/yarnpkg/berry.git" \
 | sed -E 's|^.+refs/tags/||g' \
 | grep -E '^v' \
 | sort --version-sort \
