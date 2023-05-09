@@ -12,7 +12,7 @@ If one of the commands needed is unavailable, it will let you know.
 ## Installing
 
 ```bash
-asdf plugin-add yarn
+asdf plugin-add yarn https://github.com/rromanv/asdf-yarn-berry
 asdf install yarn latest
 ```
 
